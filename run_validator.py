@@ -8,15 +8,16 @@ import time
 import scrapydo
 import utils
 
-from ipproxytool.spiders.validator.douban import DoubanSpider
-from ipproxytool.spiders.validator.assetstore import AssetStoreSpider
-from ipproxytool.spiders.validator.gather import GatherSpider
+# from ipproxytool.spiders.validator.douban import DoubanSpider
+# from ipproxytool.spiders.validator.assetstore import AssetStoreSpider
+# from ipproxytool.spiders.validator.gather import GatherSpider
 from ipproxytool.spiders.validator.httpbin import HttpBinSpider
-from ipproxytool.spiders.validator.steam import SteamSpider
-from ipproxytool.spiders.validator.boss import BossSpider
-from ipproxytool.spiders.validator.lagou import LagouSpider
-from ipproxytool.spiders.validator.liepin import LiepinSpider
-from ipproxytool.spiders.validator.jd import JDSpider
+# from ipproxytool.spiders.validator.steam import SteamSpider
+# from ipproxytool.spiders.validator.boss import BossSpider
+# from ipproxytool.spiders.validator.lagou import LagouSpider
+# from ipproxytool.spiders.validator.liepin import LiepinSpider
+# from ipproxytool.spiders.validator.jd import JDSpider
+from ipproxytool.spiders.validator.lianjia import LianJiaSpider
 
 scrapydo.setup()
 
@@ -27,7 +28,7 @@ def validator():
         # LagouSpider,
         # BossSpider,
         # LiepinSpider,
-        JDSpider,
+        LianJiaSpider,
         # DoubanSpider,
     ]
 
